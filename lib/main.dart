@@ -11,9 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Material Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue
-      ),
+      theme: ThemeData(primarySwatch: Colors.blue),
       home: MaterialFlutterApp(),
     );
   }
@@ -30,8 +28,19 @@ class _MaterialFlutterApp extends State<MaterialFlutterApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Material Design App'),),
-      floatingActionButton: FloatingActionButton(child: Icon(Icons.add), onPressed: () {})
+      appBar: AppBar(
+        title: Text('Material Design App'),
+      ),
+      floatingActionButton:
+          FloatingActionButton(child: Icon(Icons.add), onPressed: () {}),
+      body: Container(
+          child: Center(
+            child: Column(
+              children: <Widget>[Icon(Icons.android), Text('android')],
+              mainAxisAlignment: MainAxisAlignment.center,
+            ),
+          ),
+        ),
     );
   }
 }
