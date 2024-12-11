@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'imageWidget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Material Flutter Demo',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: MaterialFlutterApp(),
+      home: ImageWidgetApp(),
     );
   }
 }
